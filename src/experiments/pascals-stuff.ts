@@ -12,12 +12,17 @@ let largerNumber: bigint, globalUniqueIdentifier: symbol;
 // implicit assignment forces TS to "infer" the value
 const tripleTuble: readonly [number, boolean, string] = [4, false, "na"]; // not mutable
 type customName = [x: number, y: boolean]; // Alias & label elements for better documentation and readability
+type Employee = { readonly id: number, name: string, retire: (date: Date) => void };
+type IntersectionType = customName & Employee; // new type has properties and functions of both
+type Metric = "cm" | "inch"; // Literal types
+let firstLength: Metric = "cm";
 const namedTuple: customName = [3, true];
 enum Colours { Red = 0, Yellow = 1, Blue = 2 };
 console.log("Blue value: " + Colours.Blue);
 interface User { id: number; name: string; greet(): string; email?: string } // optional property at the end
 type unionType = string | number; // value can be one of several types
 let castingTest: unionType = 7; // cast with "as" not necessary here (type assertion)
+if (typeof castingTest === "number") {}
 let fnameLog = () => console.log(fname); // Arrow function
 fnameLog();
 function voidReturnWithDefault(greeting: string = "Hey!", name: string): void {
@@ -63,3 +68,5 @@ const wrappedValue: Wrapped<number> = { value: 10 };
 let rectPart: Partial<Rectangle> = {}; // Utlitlty types, Partial changes all properties to be optional
 let carObject: { brand: string, maxSpeed: number } = { brand: "VW", maxSpeed: 210 };
 carObject.maxSpeed += 5;
+
+//Subscriptions in Angular vs. Promise.
