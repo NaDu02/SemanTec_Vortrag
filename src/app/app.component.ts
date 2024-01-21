@@ -1,14 +1,21 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { ProfileComponent } from './profile/profile.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet],
+  imports: [CommonModule, RouterOutlet, ProfileComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'SemanTec';
+  profileNames: string[] = ["Tommy", "Joe", "Pascal", "Max"];
+  profileImages: string[] = [
+    "assets/imgs/profiles/profile1.jpg",
+    "assets/imgs/profiles/profile2.jpg",
+    "assets/imgs/profiles/profile3.jpg",
+    "assets/imgs/profiles/profile4.jpg"
+  ];
 }

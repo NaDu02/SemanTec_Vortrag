@@ -1,15 +1,18 @@
-import { Component } from '@angular/core';  // decorater
+import { Component, Input } from '@angular/core';  // decorater, Input ist nicht TS sondern Angular
 
 @Component({
-  selector: 'app-profile',  // css selector for <courses> (we extend html with our own tags)
+  selector: 'profile',  // css selector for <courses> (we extend html with our own tags)
   standalone: true,
   imports: [],
   templateUrl: './profile.component.html',
   styleUrl: './profile.component.css'
 })
 export class ProfileComponent {
-  //register Component in Module
-  firstBtnClicked() {
-    console.log("First button clicked!");
+  //register Component in Module if not standalone
+  @Input() profileName: string = "";
+  @Input() profileNumber: number = 0;
+  @Input() profileImage: string = "";
+  public firstBtnClicked(): void {
+    console.log(`${this.profileNumber}. button clicked`);
   }
 }
