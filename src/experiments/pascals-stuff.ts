@@ -1,4 +1,5 @@
 // execute with: npx ts-node src/experiments/pascals-stuff.ts
+import { MyPoint } from './practice-module'
 
 let betterThanVar: any; // var has full function scope; "any" is discouraged
 let specialType: unknown; // safer alternative to "any" - to add a type later you need to cast it
@@ -32,21 +33,7 @@ function restParameters(num1: number, num2: number, ...rest: number[]) {
     return num1 + num2 + rest.reduce((a, b) => a + b, 0); // function and initialValue
 }
 // visibility: public (default), private & protected
-class MyPoint {
-    constructor(private readonly id: string, private _x?: number, private _y?: number) {
-    } // Typescript automatically declareds and fills parameters with same name if given an access modifier (private)
-    public describe () {
-        console.log(`x: ${this._x}, y: ${this._y}`);
-    }
-    public set x (value) {
-        this._x = value;
-    }
-    public get x () {
-        if (this._x) { // check if undefined
-            return this._x;
-        } return;
-    }
-}
+
 let pointA = new MyPoint("1", 4, 5);
 pointA.describe();
 let Ax = pointA.x; // property

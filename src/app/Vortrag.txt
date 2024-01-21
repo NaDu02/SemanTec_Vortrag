@@ -1,0 +1,10 @@
+Idee: Webseite logisch aufteilen und flexibler und übersichtlicher machen
+Angular App ist ein Baum von Komponenten ausgehend vom App Component / Root Component. 
+z.B. Navigation oder Footer (html, js, css gebündelt -> wiederverwendbar)
+Verwendung mit export und import
+Module = Container für verwandte Components, zuständig für speziellen Bereich der Anwendung
+
+node_modules: Libraries = externer Code
+TS: Erweiterung von JS (JS ist Teilmenge), genauso wie SCSS von CSS.
+
+index.html nimmt den gesamten App-Ordner (standardmäßig in main.ts definiert)
