@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ProfileComponent } from '../profile/profile.component';
+
 @Component({
   selector: 'app-profile-view',
   standalone: true,
