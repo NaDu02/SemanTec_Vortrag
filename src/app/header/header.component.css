@@ -6,3 +6,13 @@ header {
     padding: 10px;
     width: 100%;
 }
+
+#meIcon {
+    float: right;
+    height: 30px;
+}
+
+#infoIcon {
+    float: right;
+    height: 30px;
+}
