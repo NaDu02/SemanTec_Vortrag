@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ProfileComponent } from '../profile/profile.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-profile-view',
@@ -15,8 +16,6 @@ export class ProfileViewComponent {
     "assets/imgs/profiles/profile2.jpg",
     "assets/imgs/profiles/profile3.jpg",
     "assets/imgs/profiles/profile4.jpg"
-
-    
   ];
 
   constructor() {}
