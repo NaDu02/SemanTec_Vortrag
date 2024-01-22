@@ -1,17 +1,23 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { ProfileComponent } from './profile/profile.component';
 import { HeaderComponent } from "./header/header.component";
 
-// Example of a component with a template and a stylesheet from Angular
- @Component({
-    selector: 'app-root',
-    standalone: true,
-    templateUrl: './app.component.html', //Hier steht, zu welcher HTML-Datei das TypeScript, das die Logik implementiert, gehört.
-    styleUrl: './app.component.css',
-    imports: [CommonModule, RouterOutlet, HeaderComponent]
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [CommonModule, RouterOutlet, ProfileComponent, HeaderComponent],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
 })
 
 export class AppComponent {
-  title = 'SemanTec';
+  profileNames: string[] = ["Tommy", "Joe", "Pascal", "Max"];
+  profileImages: string[] = [
+    "assets/imgs/profiles/profile1.jpg",
+    "assets/imgs/profiles/profile2.jpg",
+    "assets/imgs/profiles/profile3.jpg",
+    "assets/imgs/profiles/profile4.jpg"
+  ];
 }
