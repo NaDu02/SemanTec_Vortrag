@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FirstCompComponent } from './profile.component';
+import { InfoBoxComponent } from './info-box.component';
 
-describe('FirstCompComponent', () => {
-  let component: FirstCompComponent;
-  let fixture: ComponentFixture<FirstCompComponent>;
+describe('InfoBoxComponent', () => {
+  let component: InfoBoxComponent;
+  let fixture: ComponentFixture<InfoBoxComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FirstCompComponent]
+      imports: [InfoBoxComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(FirstCompComponent);
+    fixture = TestBed.createComponent(InfoBoxComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
