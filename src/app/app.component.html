@@ -6,11 +6,4 @@ Git-Hilfe:
 -->
 <app-header></app-header>
 <h1>Angular Demo</h1>
-<h2>Branch "feature/pascal_1" Test.</h2>
-<!--ngFor = for-Schleife für dynamische Erzeugung-->
-<profile 
-  *ngFor="let i of [0, 1, 2, 3]"
-  [profileImage]="profileImages[i]" 
-  [profileName]="profileNames[i]" 
-  [profileNumber]="i">
-</profile>
+<app-profile-view></app-profile-view>
