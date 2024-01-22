@@ -7,6 +7,15 @@ let myAge: number = 19, male: boolean = true, favNums: number[] = [12, 24];
 for (let favNum of favNums) {
     console.log(favNum);
 }
+function scopeTest(): void {
+    for (var x = 0; x < 10; x++) {
+        console.log(x);
+    }
+    for (let y = 0; y < 10; y++) {
+    console.log(x);
+    //console.log(y);
+    }
+}
 const fname: string = "Pascal", placeOfBirth: string = "Trier"; // immutable
 favNums.push(36);
 let largerNumber: bigint, globalUniqueIdentifier: symbol;
@@ -56,4 +65,4 @@ let rectPart: Partial<Rectangle> = {}; // Utlitlty types, Partial changes all pr
 let carObject: { brand: string, maxSpeed: number } = { brand: "VW", maxSpeed: 210 };
 carObject.maxSpeed += 5;
 
-//Subscriptions in Angular vs. Promise.
+//Subscriptions in Angular vs. Promise
