@@ -1,18 +1,20 @@
 header {
-    background-color: lightgray;
-    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+    background-color: gray;
     height: 50px;
-    margin-bottom: 10px;
-    padding: 10px;
+    padding: 20px;
     width: 100%;
 }
-
-#meIcon {
+#iconArea {
     float: right;
-    height: 30px;
+    margin-right: 20px;
+}
+.iconContainer {
+    display: inline-block;
+    margin-right: 30px;
+    text-align: center;
 }
 
-#infoIcon {
-    float: right;
+.icons {
+    width: 30px;
     height: 30px;
 }

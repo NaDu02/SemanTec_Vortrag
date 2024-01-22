@@ -1,0 +1,10 @@
+<div id="profile-view">
+    <!--ngFor = for-Schleife für dynamische Erzeugung-->
+    <div>Test</div>
+    <profile 
+        *ngFor="let i of [0, 1, 2, 3]"
+        [profileImage]="profileImages[i]" 
+        [profileName]="profileNames[i]" 
+        [profileNumber]="i">
+    </profile>
+</div>
