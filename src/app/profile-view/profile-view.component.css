@@ -5,3 +5,7 @@
     padding: 30px;
     font-size: 25px;
 }
+#profile-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

@@ -2,8 +2,10 @@
     <div id="leftProfileArea">
         <div id="profileHeading">Profile {{profileNumber}}</div>
         <div id="profileInfos">
-            <div>Name: {{profileName}}</div>
-            <div>Age: {{profileAge}}</div>
+                <div class="label">Name:</div>
+                <div class="infoValue">{{profileName}}</div>
+                <div class="label">Age:</div>
+                <div class="infoValue">{{profileAge}}</div>
         </div>
         <button mat-raised-button color="warn" (click)="firstBtnClicked()">See more</button>
     </div>

@@ -14,11 +14,17 @@
 #profileHeading {
     font-size: 30px;
     font-weight: bold;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 #profileInfos {
-    margin: 10px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 15px;
 }
+
 #profileImage {
     max-width: 500px;
     max-height: 200px;
