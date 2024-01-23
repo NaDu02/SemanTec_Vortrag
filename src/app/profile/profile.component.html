@@ -1,8 +1,11 @@
 <div id="profile">
-    <div id="profileHeading">Profile {{profileNumber}}</div>
-    <div>Name: {{profileName}}</div>
-    <!--MatButtonModule, (click)="firstBtnClicked()"-->
-    <button mat-raised-button (click)="firstBtnClicked()">This is an imported module.</button><br>
+    <div id="leftProfileArea">
+        <div id="profileHeading">Profile {{profileNumber}}</div>
+        <div id="profileInfos">
+            <div>Name: {{profileName}}</div>
+            <div>Age: {{profileAge}}</div>
+        </div>
+        <button mat-raised-button color="warn" (click)="firstBtnClicked()">See more</button>
+    </div>
     <img id="profileImage" src="{{ profileImage }}" />
-    
 </div>

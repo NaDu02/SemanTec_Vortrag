@@ -1,9 +1,11 @@
 <div id="profile-view">
     <!--ngFor = for-Schleife für dynamische Erzeugung-->
-    <div>This is a mother-component containing multiple profiles.</div>
+    <div>Profiles:</div>
+    <!--Bidirektionales Databinding-->
     <app-profile 
         *ngFor="let i of [0, 1, 2, 3]"
         [profileImage]="profileImages[i]" 
+        [profileAge]="profileAges[i]"
         [profileName]="profileNames[i]" 
         [profileNumber]="i+1">
     </app-profile>

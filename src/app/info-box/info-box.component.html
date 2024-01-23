@@ -1,8 +1,37 @@
-<p [hidden]="hidden">{{text}}</p>
-<button (click)="hidden=!hidden">Toggle</button>
-
-<ul>
-    <li *ngFor="let book of books">
-      <span>{{book.title}}</span> - <small>{{book.subtitle}}</small>
-    </li>
-  </ul>
+<div id="infoBox">
+  <form>
+    <mat-form-field appearance="fill">
+      <mat-label>Name</mat-label>
+      <input matInput placeholder="Enter your name">
+    </mat-form-field><br>
+    <mat-form-field appearance="fill">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="Enter your email">
+    </mat-form-field><br>
+    <mat-form-field appearance="fill">
+      <mat-label>Adress</mat-label>
+      <input matInput placeholder="Enter your adress">
+    </mat-form-field><br>
+    <button mat-raised-button color="primary">Submit</button>
+  </form>
+  <div class="spacing"></div>
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          What is the capital of Canada?
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>Ottowa</p>
+    </mat-expansion-panel>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          What is the population of Germany?
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>~ 83 Mio.</p>
+    </mat-expansion-panel>
+    <!-- More panels here -->
+  </mat-accordion>
+</div>
