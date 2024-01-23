@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [ProfileComponent, CommonModule],
   templateUrl: './profile-view.component.html',
-  styleUrl: './profile-view.component.css'
+  styleUrls: ['./profile-view.component.css']
 })
 export class ProfileViewComponent {
   profileNames: string[] = ["Tommy", "Joe", "Pascal", "Max"];
@@ -17,8 +17,4 @@ export class ProfileViewComponent {
     "assets/imgs/profiles/profile3.jpg",
     "assets/imgs/profiles/profile4.jpg"
   ];
-
-  constructor() {}
-
-  ngOnInit() {}
 }

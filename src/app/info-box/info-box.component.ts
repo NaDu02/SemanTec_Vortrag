@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-//ngfor import
+//ngFor import
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './info-box.component.html',
-  styleUrl: './info-box.component.css'
+  styleUrls: ['./info-box.component.css']
 })
 export class InfoBoxComponent implements OnInit {
   text = "Additional Info-Text on our Info Box! 🎊";
