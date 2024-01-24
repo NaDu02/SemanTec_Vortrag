@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';  // decorater, Input ist nicht TS sondern Angular
+import { ProfileService } from '../profile.service';
 import { MatButtonModule } from '@angular/material/button';
 @Component({
   selector: 'app-profile',  // css selector for <courses> (we extend html with our own tags)
@@ -9,6 +10,7 @@ import { MatButtonModule } from '@angular/material/button';
 })
 export class ProfileComponent {
   @Input() profileName: string = "";
+  @Input() profileAge: number = 0;
   @Input() profileNumber: number = 0;
   @Input() profileImage: string = "";
   public firstBtnClicked(): void {
