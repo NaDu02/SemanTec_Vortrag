@@ -1,0 +1,31 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, purple, black);
+    height: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    color: white;
+}
+#welcome {
+    float: left;
+    margin-left: 20px;
+    font-size: 24px;
+}
+#iconArea {
+    float: right;
+    margin-right: 20px;
+    font-size: 18px;
+}
+.iconContainer {
+    display: inline-block;
+    margin-right: 30px;
+    text-align: center;
+}
+
+.icons {
+    width: 30px;
+    height: 30px;
+}

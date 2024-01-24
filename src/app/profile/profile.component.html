@@ -1,7 +1,13 @@
 <div id="profile">
-    <div id="profileHeading">Profile {{profileNumber}}</div>
-    <div>Name: {{profileName}}</div>
-    <button (click)="firstBtnClicked()">Click me</button><br>
-    <img src="{{ profileImage }}">
-
+    <div id="leftProfileArea">
+        <div id="profileHeading">Profile {{profileNumber}}</div>
+        <div id="profileInfos">
+                <div class="label">Name:</div>
+                <div class="infoValue">{{profileName}}</div>
+                <div class="label">Age:</div>
+                <div class="infoValue">{{profileAge}}</div>
+        </div>
+        <button mat-raised-button color="warn" (click)="firstBtnClicked()">See more</button>
+    </div>
+    <img id="profileImage" src="{{ profileImage }}" />
 </div>
